@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music player</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body>
+    <div id="container" class="container">
+        <h1 class="titulo">Music player</h1>
+        <p>Now Playing:</p>
+      <img class="song" src="./assets/download.jpg" alt="" />
+
+      <audio id="audio">
+        <source
+          src="./assets/Bruno Mars - leave the door open l PAGODE.mp3"
+          type="audio/mpeg"
+        />
+      </audio>
+      <nav class="control">
+        <img onclick='back()' class='buttons' src='./assets/back.png'>
+        <img onclick='play()' class='buttons' src='./assets/play.png'>
+        <img onclick='pause()' class='buttons' src='./assets/pause.png'>
+        <img onclick='down()' class='buttons' src='./assets/volume_down.png'>
+        <img onclick='up()' class='buttons' src='./assets/volume_up.png'>
+        
+        <img onclick='foward()' class='buttons' src='./assets/foward.png'>
+        
+      </nav>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
